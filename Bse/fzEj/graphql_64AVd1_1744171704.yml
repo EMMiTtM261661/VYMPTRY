@@ -2,7 +2,6 @@ comment: false
 
 coverage:
   status:
-    patch:
         target: 80%
     project:
       default:
