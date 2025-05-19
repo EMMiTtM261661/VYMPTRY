@@ -1,7 +1,0 @@
-comment: false
-
-coverage:
-  status:
-        target: 80%
-    project:
-      default:
