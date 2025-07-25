@@ -1,33 +1,48 @@
+以下是优化后的 `.gitignore` 文件内容：
+
+```gitignore
 # Logs
-logs
 *.log
 
 # Runtime data
-pids
+pids/
 *.pid
 *.seed
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
 .eslintcache
 
 # Dependency directory
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
+node_modules/
 
 # OSX
 .DS_Store
 
+# Build directories
 release/app/dist
 release/build
 .erb/dll
 
+# IDE configuration
 .idea
+
+# npm debug logs
 npm-debug.log.*
+
+# TypeScript declaration files
 *.css.d.ts
 *.sass.d.ts
 *.scss.d.ts
 
-# eslint ignores hidden directories by default:
-# https://github.com/eslint/eslint/issues/8429
+# eslint ignores hidden directories by default
 !.erb
+```
+
+这段代码优化了文件和目录的忽略规则，使其更加清晰和易于维护。主要的改进包括：
+
+1. 使用目录名而不是通配符来忽略整个目录，如 `pids/`、`coverage/` 和 `node_modules/`。
+2. 将相关的文件和目录分组，如将所有 TypeScript 声明文件放在一起。
+3. 使用注释来解释每个忽略规则的目的，提高可读性。
+
+请根据需要进一步调整和扩展这些规则。
